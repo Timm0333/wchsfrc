@@ -427,10 +427,11 @@ p { margin: 0 0 1rem; }
 .logo-tile:hover .ph { transform: translateY(-4px); border-color: var(--maroon-bright); box-shadow: 0 18px 40px var(--maroon-glow); }
 .logo-tile .name { text-align: center; font-family: var(--font-head); font-weight: 600; font-size: 1.15rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); transition: color 0.2s; }
 .logo-tile:hover .name { color: var(--text); }
-.tier-platinum { --tier: #b57bd1; --min: 320px; }
-.tier-gold { --tier: #d4a017; --min: 250px; }
-.tier-silver { --tier: #9aa1ab; --min: 200px; }
-.tier-bronze { --tier: #c98a4b; --min: 170px; }
+.tier-experiment { --tier: #b57bd1; --min: 320px; }
+.tier-create { --tier: #d4a017; --min: 250px; }
+.tier-plan { --tier: #9aa1ab; --min: 200px; }
+.tier-imagine { --tier: #c98a4b; --min: 170px; }
+.tier-ask { --tier: #c98a4b; --min: 170px; }
 .tier-special { --tier: var(--maroon-bright); --min: 220px; }
 @media (max-width: 600px) {
   .logo-grid { grid-template-columns: repeat(2, 1fr); }

@@ -101,12 +101,12 @@ if (officerGrid) {
 
 // ---------- Projects ----------
 const PROJECTS = [
-  { title: 'Robot Code', tag: 'Programming', members: ['Daniel', 'Owen', 'Kai'], desc: 'The essential code required to control the robot in competition.' },
-  { title: 'Vision Tracking', tag: 'Programming', members: ['Emily', 'Jordan'], desc: 'AI-powered AprilTag detection feeding real-time pose estimates into autonomous path planning.' },
-  { title: 'Shooter Prototype', tag: 'Mechanical', members: ['Cody', 'Daniel'], desc: 'Spin-up wheel shooter with adjustable hood for high-accuracy scoring at varying distances.' },
-  { title: 'Electrical Board', tag: 'Electrical', members: ['Kai', 'Emily'], desc: 'Reworking power routing, CAN loops, and labeling so repairs between matches take minutes, not hours.' },
-  { title: 'CAD Kitbot', tag: 'Mechanical', members: ['Owen', 'Cody'], desc: 'Full parametric CAD assembly of the base chassis so new members can learn from a clean model.' },
-  { title: 'Intake Arm', tag: 'Mechanical', members: ['Daniel', 'Jordan'], desc: 'Deployable intake tuned for fast floor pickup without compromising frame perimeter rules.' }
+  { title: 'Shooting From Any Distance (Interpolating Tree Map)', tag: 'Programming', desc: 'Troubleshooting code and testing the bot on the field to accurately shoot into the hub based on field position.' },
+  { title: 'Align to Hub', tag: 'Programming', desc: 'Using a combination of odometry and camera data to make the robot face the hub at the press of a button.' },
+  { title: 'Intake Strengthening', tag: 'Mechanical', desc: 'Working on setting up a CNC router and cutting polycarbonate to give greater rigidity to our intake.' },
+  { title: 'Wire Management', tag: 'Electrical', desc: 'Reworking power routing, CAN loops, and labeling to make repairs easier and power issues less likely.' },
+  { title: 'Full-Robot CAD Model', tag: 'Mechanical', desc: 'Creating a full parametric CAD assembly of the competition robot.'},
+  { title: 'Designing Pins and T-Shirts', tag: 'Outreach', desc: 'Creating promotional material in preparation for the offseason event and the next season.' }
 ];
 const projectGrid = document.getElementById('project-grid');
 if (projectGrid) {
@@ -198,7 +198,7 @@ if (form) {
     fetch('https://formsubmit.co/wchsfrc@gmail.com', { method: 'POST', body: new FormData(form) })
       .then(() => {
         msg.style.color = '#22c55e';
-        msg.textContent = "Thanks for contacting West Campus Robotics! We'll reply within 48 hours.";
+        msg.textContent = "Thanks for contacting the MechCatical Warriors! We'll reply within 48 hours.";
         msg.style.display = 'block';
         form.reset();
       })
